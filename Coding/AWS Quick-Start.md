@@ -22,7 +22,7 @@ It's recommended to select the `eu-west-1 (ireland)` server since it's the large
 	- Default client region: `eu-west-1`
 	- Profile name: `rnd-devops`
 1. Authenticate the shell with `aws sso login --profile rnd-devops`.
-## Pushing an image to ECR
+## Pushing an image to ECR #docker
 1. Login into ECR with: `aws ecr get-login-password --region eu-west-1 --profile <profile> | docker login --username AWS --password-stdin 125508840959.dkr.ecr.eu-west-1.amazonaws.com`
 2. Ensure that a repository for the image exists. If not, you can create one from the CLI with: `aws ecr create-repository --repository-name <image-name> --image-tag-mutability IMMUTABLE --region eu-west-1 --profile <profile>`
 3. Tag image with correct name: `docker tag <image> 125508840959.dkr.ecr.eu-west-1.amazonaws.com/<image-name>:<image-tag>`

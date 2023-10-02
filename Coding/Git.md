@@ -1,6 +1,6 @@
 # Rebase 
 
-## `--onto`
+## `--onto` #git
 
 The `--onto` flag can be used to specify which commit should be used as branching point. Given a git history like this:
 
@@ -48,7 +48,7 @@ gitGraph
 
 > **Note**
 > Passing `I` as reference has a different result: the branch develop will remain intact, with a new detached HEAD being created at commit `I'`
-## `--rebase-merges`
+## `--rebase-merges` #git
 
 The `--rebase-merges` flag can be used to keep and rebase merges as well. Starting from a git history like this:
 
