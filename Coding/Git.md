@@ -86,3 +86,15 @@ gitGraph
    checkout main
    commit id: "G"
 ```
+
+# Update sub-module commit without checkout
+```bash
+git update-index --add --cacheinfo  mode,sha1,submodule_path
+# Example
+git update-index --add --cacheinfo  160000,03d7dff560ac8ed64f16e763204b04ce91ca5faf,submodules/submodule
+```
+
+`mode` can be retrieved by:
+```bash
+git ls-files --stage submodule_path
+```
