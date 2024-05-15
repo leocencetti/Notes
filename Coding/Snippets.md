@@ -1,4 +1,3 @@
-re
 ## Find broken symlinks
 ```bash
 find . -xtype l
@@ -28,4 +27,9 @@ https://www.scaler.com/topics/cpp/multiple-inheritance-in-cpp/
 ## Monitor Jetson Nano temperatures
 ```bash
 watch cat /sys/devices/virtual/thermal/thermal_zone*/temp
+```
+
+## Clone docker image across registries
+```bash
+docker buildx imagetools create --tag <TO> <FROM>
 ```
