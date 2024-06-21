@@ -1,5 +1,8 @@
 {
   "accentColor": "#c24e00",
   "baseFontSize": 14,
-  "theme": "moonstone"
+  "theme": "system",
+  "enabledCssSnippets": [
+    "fix_slides"
+  ]
 }
